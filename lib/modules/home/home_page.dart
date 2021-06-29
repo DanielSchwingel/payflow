@@ -71,7 +71,9 @@ class _HomePageState extends State<HomePage> {
               )
             ),
             GestureDetector(
-              onTap: (){print('Clicou');},
+              onTap: (){
+                Navigator.pushNamed(context, '/barcode_scanner');
+              },
               child: Container(
                 height: 56,
                 width: 56,
